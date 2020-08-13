@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{E271DB8A-EFB6-4C57-99AA-5E7861A3C4A8}</ProjectGuid>
+    <RootNamespace>FFMpegEnvTest</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\Lenovo\source\repos\FFMpegEnvTest\FFMpegEnvTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>C:\Users\Lenovo\source\repos\FFMpegEnvTest\FFMpegEnvTest\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>avcodec.lib;avformat.lib;avutil.lib;avdevice.lib;avfilter.lib;postproc.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\Lenovo\source\repos\FFMpegEnvTest\FFMpegEnvTest\simplest_ffmpeg_streamer\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>C:\Users\Lenovo\source\repos\FFMpegEnvTest\FFMpegEnvTest\simplest_ffmpeg_streamer\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>avcodec.lib;avformat.lib;avutil.lib;avdevice.lib;avfilter.lib;postproc.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="haoshuhutest\helloword.cpp" />
+    <ClCompile Include="simplest_ffmpeg_streamer\simplest_ffmpeg_streamer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="lib\avcodec.lib" />
+    <Library Include="lib\avdevice.lib" />
+    <Library Include="lib\avfilter.lib" />
+    <Library Include="lib\avformat.lib" />
+    <Library Include="lib\avutil.lib" />
+    <Library Include="lib\libavcodec.dll.a" />
+    <Library Include="lib\libavdevice.dll.a" />
+    <Library Include="lib\libavfilter.dll.a" />
+    <Library Include="lib\libavformat.dll.a" />
+    <Library Include="lib\libavutil.dll.a" />
+    <Library Include="lib\libpostproc.dll.a" />
+    <Library Include="lib\libswresample.dll.a" />
+    <Library Include="lib\libswscale.dll.a" />
+    <Library Include="lib\postproc.lib" />
+    <Library Include="lib\swresample.lib" />
+    <Library Include="lib\swscale.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="avcodec-58.dll" />
+    <None Include="avdevice-58.dll" />
+    <None Include="avfilter-7.dll" />
+    <None Include="avformat-58.dll" />
+    <None Include="avutil-56.dll" />
+    <None Include="lib\avcodec-58.def" />
+    <None Include="lib\avdevice-58.def" />
+    <None Include="lib\avfilter-7.def" />
+    <None Include="lib\avformat-58.def" />
+    <None Include="lib\avutil-56.def" />
+    <None Include="lib\postproc-55.def" />
+    <None Include="lib\swresample-3.def" />
+    <None Include="lib\swscale-5.def" />
+    <None Include="postproc-55.dll" />
+    <None Include="swresample-3.dll" />
+    <None Include="swscale-5.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\libavcodec\ac3_parser.h" />
+    <ClInclude Include="include\libavcodec\adts_parser.h" />
+    <ClInclude Include="include\libavcodec\avcodec.h" />
+    <ClInclude Include="include\libavcodec\avdct.h" />
+    <ClInclude Include="include\libavcodec\avfft.h" />
+    <ClInclude Include="include\libavcodec\bsf.h" />
+    <ClInclude Include="include\libavcodec\codec.h" />
+    <ClInclude Include="include\libavcodec\codec_desc.h" />
+    <ClInclude Include="include\libavcodec\codec_id.h" />
+    <ClInclude Include="include\libavcodec\codec_par.h" />
+    <ClInclude Include="include\libavcodec\d3d11va.h" />
+    <ClInclude Include="include\libavcodec\dirac.h" />
+    <ClInclude Include="include\libavcodec\dv_profile.h" />
+    <ClInclude Include="include\libavcodec\dxva2.h" />
+    <ClInclude Include="include\libavcodec\jni.h" />
+    <ClInclude Include="include\libavcodec\mediacodec.h" />
+    <ClInclude Include="include\libavcodec\packet.h" />
+    <ClInclude Include="include\libavcodec\qsv.h" />
+    <ClInclude Include="include\libavcodec\vaapi.h" />
+    <ClInclude Include="include\libavcodec\vdpau.h" />
+    <ClInclude Include="include\libavcodec\version.h" />
+    <ClInclude Include="include\libavcodec\videotoolbox.h" />
+    <ClInclude Include="include\libavcodec\vorbis_parser.h" />
+    <ClInclude Include="include\libavcodec\xvmc.h" />
+    <ClInclude Include="include\libavdevice\avdevice.h" />
+    <ClInclude Include="include\libavdevice\version.h" />
+    <ClInclude Include="include\libavfilter\avfilter.h" />
+    <ClInclude Include="include\libavfilter\buffersink.h" />
+    <ClInclude Include="include\libavfilter\buffersrc.h" />
+    <ClInclude Include="include\libavfilter\version.h" />
+    <ClInclude Include="include\libavformat\avformat.h" />
+    <ClInclude Include="include\libavformat\avio.h" />
+    <ClInclude Include="include\libavformat\version.h" />
+    <ClInclude Include="include\libavutil\adler32.h" />
+    <ClInclude Include="include\libavutil\aes.h" />
+    <ClInclude Include="include\libavutil\aes_ctr.h" />
+    <ClInclude Include="include\libavutil\attributes.h" />
+    <ClInclude Include="include\libavutil\audio_fifo.h" />
+    <ClInclude Include="include\libavutil\avassert.h" />
+    <ClInclude Include="include\libavutil\avconfig.h" />
+    <ClInclude Include="include\libavutil\avstring.h" />
+    <ClInclude Include="include\libavutil\avutil.h" />
+    <ClInclude Include="include\libavutil\base64.h" />
+    <ClInclude Include="include\libavutil\blowfish.h" />
+    <ClInclude Include="include\libavutil\bprint.h" />
+    <ClInclude Include="include\libavutil\bswap.h" />
+    <ClInclude Include="include\libavutil\buffer.h" />
+    <ClInclude Include="include\libavutil\camellia.h" />
+    <ClInclude Include="include\libavutil\cast5.h" />
+    <ClInclude Include="include\libavutil\channel_layout.h" />
+    <ClInclude Include="include\libavutil\common.h" />
+    <ClInclude Include="include\libavutil\cpu.h" />
+    <ClInclude Include="include\libavutil\crc.h" />
+    <ClInclude Include="include\libavutil\des.h" />
+    <ClInclude Include="include\libavutil\dict.h" />
+    <ClInclude Include="include\libavutil\display.h" />
+    <ClInclude Include="include\libavutil\dovi_meta.h" />
+    <ClInclude Include="include\libavutil\downmix_info.h" />
+    <ClInclude Include="include\libavutil\encryption_info.h" />
+    <ClInclude Include="include\libavutil\error.h" />
+    <ClInclude Include="include\libavutil\eval.h" />
+    <ClInclude Include="include\libavutil\ffversion.h" />
+    <ClInclude Include="include\libavutil\fifo.h" />
+    <ClInclude Include="include\libavutil\file.h" />
+    <ClInclude Include="include\libavutil\frame.h" />
+    <ClInclude Include="include\libavutil\hash.h" />
+    <ClInclude Include="include\libavutil\hdr_dynamic_metadata.h" />
+    <ClInclude Include="include\libavutil\hmac.h" />
+    <ClInclude Include="include\libavutil\hwcontext.h" />
+    <ClInclude Include="include\libavutil\hwcontext_cuda.h" />
+    <ClInclude Include="include\libavutil\hwcontext_d3d11va.h" />
+    <ClInclude Include="include\libavutil\hwcontext_drm.h" />
+    <ClInclude Include="include\libavutil\hwcontext_dxva2.h" />
+    <ClInclude Include="include\libavutil\hwcontext_mediacodec.h" />
+    <ClInclude Include="include\libavutil\hwcontext_opencl.h" />
+    <ClInclude Include="include\libavutil\hwcontext_qsv.h" />
+    <ClInclude Include="include\libavutil\hwcontext_vaapi.h" />
+    <ClInclude Include="include\libavutil\hwcontext_vdpau.h" />
+    <ClInclude Include="include\libavutil\hwcontext_videotoolbox.h" />
+    <ClInclude Include="include\libavutil\hwcontext_vulkan.h" />
+    <ClInclude Include="include\libavutil\imgutils.h" />
+    <ClInclude Include="include\libavutil\intfloat.h" />
+    <ClInclude Include="include\libavutil\intreadwrite.h" />
+    <ClInclude Include="include\libavutil\lfg.h" />
+    <ClInclude Include="include\libavutil\log.h" />
+    <ClInclude Include="include\libavutil\lzo.h" />
+    <ClInclude Include="include\libavutil\macros.h" />
+    <ClInclude Include="include\libavutil\mastering_display_metadata.h" />
+    <ClInclude Include="include\libavutil\mathematics.h" />
+    <ClInclude Include="include\libavutil\md5.h" />
+    <ClInclude Include="include\libavutil\mem.h" />
+    <ClInclude Include="include\libavutil\motion_vector.h" />
+    <ClInclude Include="include\libavutil\murmur3.h" />
+    <ClInclude Include="include\libavutil\opt.h" />
+    <ClInclude Include="include\libavutil\parseutils.h" />
+    <ClInclude Include="include\libavutil\pixdesc.h" />
+    <ClInclude Include="include\libavutil\pixelutils.h" />
+    <ClInclude Include="include\libavutil\pixfmt.h" />
+    <ClInclude Include="include\libavutil\random_seed.h" />
+    <ClInclude Include="include\libavutil\rational.h" />
+    <ClInclude Include="include\libavutil\rc4.h" />
+    <ClInclude Include="include\libavutil\replaygain.h" />
+    <ClInclude Include="include\libavutil\ripemd.h" />
+    <ClInclude Include="include\libavutil\samplefmt.h" />
+    <ClInclude Include="include\libavutil\sha.h" />
+    <ClInclude Include="include\libavutil\sha512.h" />
+    <ClInclude Include="include\libavutil\spherical.h" />
+    <ClInclude Include="include\libavutil\stereo3d.h" />
+    <ClInclude Include="include\libavutil\tea.h" />
+    <ClInclude Include="include\libavutil\threadmessage.h" />
+    <ClInclude Include="include\libavutil\time.h" />
+    <ClInclude Include="include\libavutil\timecode.h" />
+    <ClInclude Include="include\libavutil\timestamp.h" />
+    <ClInclude Include="include\libavutil\tree.h" />
+    <ClInclude Include="include\libavutil\twofish.h" />
+    <ClInclude Include="include\libavutil\tx.h" />
+    <ClInclude Include="include\libavutil\version.h" />
+    <ClInclude Include="include\libavutil\video_enc_params.h" />
+    <ClInclude Include="include\libavutil\xtea.h" />
+    <ClInclude Include="include\libpostproc\postprocess.h" />
+    <ClInclude Include="include\libpostproc\version.h" />
+    <ClInclude Include="include\libswresample\swresample.h" />
+    <ClInclude Include="include\libswresample\version.h" />
+    <ClInclude Include="include\libswscale\swscale.h" />
+    <ClInclude Include="include\libswscale\version.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\inttypes.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavcodec\avcodec.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavcodec\avfft.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavcodec\dxva2.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavcodec\old_codec_ids.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavcodec\vaapi.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavcodec\vda.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavcodec\vdpau.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavcodec\version.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavcodec\xvmc.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavdevice\avdevice.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavdevice\version.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavfilter\asrc_abuffer.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavfilter\avcodec.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavfilter\avfilter.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavfilter\avfiltergraph.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavfilter\buffersink.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavfilter\buffersrc.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavfilter\version.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavformat\avformat.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavformat\avio.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavformat\version.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\adler32.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\aes.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\attributes.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\audioconvert.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\audio_fifo.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\avassert.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\avconfig.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\avstring.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\avutil.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\base64.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\blowfish.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\bprint.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\bswap.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\buffer.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\channel_layout.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\common.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\cpu.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\crc.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\dict.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\downmix_info.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\error.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\eval.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\ffversion.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\fifo.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\file.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\frame.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\hmac.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\imgutils.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\intfloat.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\intfloat_readwrite.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\intreadwrite.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\lfg.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\log.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\lzo.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\macros.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\mathematics.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\md5.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\mem.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\murmur3.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\old_pix_fmts.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\opt.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\parseutils.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\pixdesc.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\pixfmt.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\random_seed.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\rational.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\replaygain.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\ripemd.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\samplefmt.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\sha.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\sha512.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\stereo3d.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\time.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\timecode.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\timestamp.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\version.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libavutil\xtea.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libpostproc\postprocess.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libpostproc\version.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libswresample\swresample.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libswresample\version.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libswscale\swscale.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\libswscale\version.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\stdint.h" />
+    <ClInclude Include="simplest_ffmpeg_streamer\include\_mingw.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
