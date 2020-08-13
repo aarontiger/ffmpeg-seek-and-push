@@ -711,5 +711,8 @@
     <ClCompile Include="simplest_ffmpeg_streamer\simplest_ffmpeg_streamer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="simplest_ffmpeg_streamer\ffmpeg_seek_and_streamer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
