@@ -43,7 +43,7 @@ extern "C"
 #endif
 #endif
 
-int main1(int argc, char* argv[])
+int main(int argc, char* argv[])
 {
 	AVOutputFormat *ofmt = NULL;
 	//Input AVFormatContext and Output AVFormatContext
@@ -61,9 +61,9 @@ int main1(int argc, char* argv[])
 	//in_filename  = "cuc_ieschool.h264";
 	//in_filename  = "cuc_ieschool.flv";//输入URL（Input file URL）
 	//in_filename  = "shanghai03_p.h264";
-	in_filename = "E:\\mediacovert\\meeting.flv";
+	in_filename = "E:\\mediaconvert\\meeting.flv";
 	
-	out_filename = "rtmp://127.0.0.1:1935/live/haotestA1";//输出 URL（Output URL）[RTMP]
+	out_filename = "rtmp://192.168.66.162:1935/live/haotestA1";//输出 URL（Output URL）[RTMP]
 	//out_filename = "rtp://233.233.233.233:6666";//输出 URL（Output URL）[UDP]
 
 	av_register_all();

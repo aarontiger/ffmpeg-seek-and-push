@@ -43,7 +43,7 @@ extern "C"
 #endif
 #endif
 
-int main(int argc, char* argv[])
+int main1(int argc, char* argv[])
 {
 	AVOutputFormat *ofmt = NULL;
 	//Input AVFormatContext and Output AVFormatContext

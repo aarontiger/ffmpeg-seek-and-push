@@ -1,0 +1,10 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: 中间目录(x64\Debug\)包含从另一个项目(FFMpegEnvTest.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+  simplest_ffmpeg_streamer.cpp
+e:\22-vsprojects\seekandrtmp\ffmpegenvtest\simplest_ffmpeg_streamer\simplest_ffmpeg_streamer.cpp(82): warning C4018: “<”: 有符号/无符号不匹配
+e:\22-vsprojects\seekandrtmp\ffmpegenvtest\simplest_ffmpeg_streamer\simplest_ffmpeg_streamer.cpp(101): warning C4018: “<”: 有符号/无符号不匹配
+e:\22-vsprojects\seekandrtmp\ffmpegenvtest\simplest_ffmpeg_streamer\simplest_ffmpeg_streamer.cpp(150): warning C4244: “初始化”: 从“double”转换到“int64_t”，可能丢失数据
+e:\22-vsprojects\seekandrtmp\ffmpegenvtest\simplest_ffmpeg_streamer\simplest_ffmpeg_streamer.cpp(152): warning C4244: “=”: 从“double”转换到“int64_t”，可能丢失数据
+e:\22-vsprojects\seekandrtmp\ffmpegenvtest\simplest_ffmpeg_streamer\simplest_ffmpeg_streamer.cpp(154): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+e:\22-vsprojects\seekandrtmp\ffmpegenvtest\simplest_ffmpeg_streamer\simplest_ffmpeg_streamer.cpp(163): warning C4244: “参数”: 从“int64_t”转换到“unsigned int”，可能丢失数据
+e:\22-vsprojects\seekandrtmp\ffmpegenvtest\simplest_ffmpeg_streamer\simplest_ffmpeg_streamer.cpp(173): warning C4244: “=”: 从“int64_t”转换到“int”，可能丢失数据
+  FFMpegEnvTest.vcxproj -> E:\22-VsProjects\SeekAndRtmp\x64\Debug\FFMpgeSeekAndPush.exe
